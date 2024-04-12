@@ -1,7 +1,6 @@
 {
   "version": 2,
-  "builds": [
-    {"src": "server.py", "use": "@vercel/python"}
-  ],
-  "routes": [{"handle": "filesystem"}, {"src": "/.*", "dest": "server.py"}]
+  "routes": [
+    {"src": "/.*", "dest": "server.py"}
+  ]
 }
